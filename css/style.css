@@ -1,0 +1,655 @@
+/* Start Glopal Roles */
+* {
+  margin: 0 auto;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+.fr-section {
+  padding: 20px;
+  font-family: cursive;
+  margin-top: 40px;
+}
+.fr-section p {
+  font-size: 50px;
+  text-align: center;
+}
+.fr-section .span {
+  width: 110px;
+  height: 3px;
+  background-color: #b881bc;
+  text-align: center;
+  margin-top: 20px;
+}
+.new-section {
+  width: 100%;
+  height: 100vh;
+  padding: 20px 0;
+  margin: 0;
+}
+/* End Glopal Roles */
+/* Start Header Section */
+.header .container {
+  margin: 0px auto;
+  padding: 5px 0;
+  width: 100%;
+  height: 40px;
+  position: relative;
+  background-color: #22223b;
+  position: fixed;
+  z-index: 10;
+}
+.header .container .logo {
+  width: 90px;
+  margin-left: 60px;
+  color: #f2e9e4;
+  font-size: 30px;
+}
+.header .container .logo span {
+  color: #b881bc;
+}
+.header .container .nav {
+  position: absolute;
+  padding: 5px 0;
+  right: 0;
+  top: 10px;
+  margin-right: 60px;
+}
+.header .container .nav ul li {
+  list-style-type: none;
+  display: inline;
+  margin: 10px;
+  font-size: 18px;
+  transition: 0.3s;
+}
+.active,
+.header .container .nav ul li:hover {
+  padding: 6px 0;
+  border-top: 2px solid #c9ada7;
+  border-bottom: 2px solid #c9ada7;
+  border-radius: 150%;
+}
+.header .container .nav ul li a{
+  color: #c9ada7;
+}
+/* End Header Section */
+/* Start Home Section */
+.home .container {
+  background-image: url(../images/shutterstock_715019719.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: calc(100vh);
+  position: relative;
+}
+.home .container div::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(11, 2, 2);
+  opacity: 0.8;
+}
+.home .container p {
+  color: #fff;
+  font-size: 60px;
+  width: 800px;
+  height: 0px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: capitalize;
+  text-align: center;
+  border: 2px solid #b881bc;
+  border-radius: 50%;
+}
+.home .container p span {
+  color: #b881bc;
+  font-size: 50px;
+  transition: 1s;
+}
+.home .container p span:hover {
+  font-size: 60px;
+}
+/* End Home Section */
+/* Start services Section */
+.services .container {
+  width: 80%;
+  margin: 160px auto;
+  padding: 20px;
+  text-align: center;
+}
+.services .container .card {
+  width: 20%;
+  height: 450px;
+  display: inline-block;
+  border: 2px solid #b881bc;
+  border-radius: 15px;
+  margin: 20px 40px;
+  padding: 10px;
+  text-align: center;
+  position: relative;
+  transition: 1s;
+}
+.services .container .card:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 0;
+  left: 0;
+  background-color: #b881bc;
+  border: 1px solid #b881bc;
+  border-radius: 4%;
+  opacity: 0;
+  transition: 0.9s;
+}
+.services .container .card:hover::after {
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+}
+.services .container .card:nth-child(1):hover {
+  transform: translate(-10px,-15px);
+}
+.services .container .card:nth-child(2):hover {
+  transform: translate(0px,-15px);
+}
+.services .container .card:nth-child(3):hover {
+  transform: translate(10px,-15px);
+}
+.services .container .clear {
+  clear: both;
+}
+.services .container .card i {
+  font-size: 50px;
+  color: #b881bc;
+  margin: 25px;
+}
+.services .container .card p {
+  width: 100%;
+  font-size: 30px;
+  font-weight: 900;
+  margin: 33px auto;
+  font-family: "Work Sans", "-apple-system", "BlinkMacSystemFont", 'Segoe UI', "Roboto", "Oxygen", "Ubuntu", "Cantarell", 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.services .container .card span {
+  font-size: 25px;
+  display: block;
+  margin: 45px;
+  font-family: "Work Sans", sans-serif;
+  color: #dd4c2b;
+}
+.services .container .card a {
+  color: #b239bb;
+  font-size: 27px;
+  font-weight: bold;
+  font-family: "Work Sans", sans-serif;
+}
+/* End services Section */
+/* Start portfolio Section */
+.portfolio {
+  background-color: rgb(245, 245, 245);
+}
+.portfolio .container {
+  width: 80%;
+  padding: 40px;
+  margin: 40px auto;
+  text-align: center;
+}
+.portfolio .container .item {
+  display: inline-block;
+  width: 300px;
+  margin: 40px;
+  position: relative;
+}
+.portfolio .container .item img {
+  width: 300px;
+  height: 250px;
+}
+.portfolio .container .item::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  background-color: #c9ada7;
+  border: 1px solid #c9ada7;
+  border-radius: 5%;
+  transition: .5s;
+  opacity: 0;
+}
+.portfolio .container .item:hover::before {
+  top: -25px;
+  left: -30px;
+  width: 120%;
+  height: 120%;
+  opacity: 0.7;
+}
+.portfolio .container .item .delay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  visibility: hidden;
+  transition: .1s;
+}
+.portfolio .container .item:hover .delay {
+  visibility: visible;
+  z-index: 5;
+}
+.portfolio .container .item .delay p {
+  margin-top: 20px;
+  text-transform: uppercase;
+  font-size: 25px;
+  font-weight: 900;
+  color: #b239bb;
+  font-family: cursive;
+  transition: .1s;
+}
+.portfolio .container .item .delay span {
+  display: block;
+  margin: 20px auto;
+  width: 100%;
+  color: #22223b;
+  font-size: 25px;
+  font-weight: 900;
+  transition: .3s;
+}
+.portfolio .container .item .delay i {
+  width: 30px;
+  height: 30px;
+  background-color: #b239bb;
+  border: 2px solid #b239bb;
+  border-radius: 50%;
+  color: #22223b;
+  margin: 10px;
+  padding: 5px;
+  line-height: 2;
+  transition: .5s;
+}
+/* End portfolio Section */
+/* Start About Secton */
+.about .container {
+  width: 80%;
+  height: 600px;
+  margin: 40px auto;
+  text-align: center;
+  position: relative;
+}
+.about .container .prand {
+  width: 550px;
+  height: 680px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  margin: 20px;
+}
+.about .container .prand img {
+  width: 550px;
+  height: 680px;
+  border: 0.1px solid #c9ada7;
+  border-radius: 30px;
+}
+.about .container .texts {
+  width: 60%;
+  position: absolute;
+  left: 600px;
+  top: 150px;
+  text-align: start;
+}
+.about .container .texts p {
+  margin: 40px 20px;
+  line-height: 1.6;
+}
+.about .container .texts p:first-child {
+  font-weight: bold;
+  font-size: 25px;
+}
+.about .container .texts p:last-child {
+  font-size: 19px;
+  font-family: cursive, 'Work Sans';
+  color: #36365d;
+}
+.about .container .texts .line {
+  display: inline-block;
+  width: 500px;
+  height: 2px;
+  margin: 20px;
+  text-align: start;
+  background-color: #b881bc;
+}
+/* End About Secton */
+/* Start Prices Section */
+.prices {
+  background-color: #ccccd2;
+}
+.prices .container {
+  width: 80%;
+  height: 600px;
+  margin: 20px auto;
+  text-align: center;
+}
+.prices .container .plan {
+  display: inline-block;
+  width: 15%;
+  height: 90%;
+  background-color: #22223b;
+  color: #fff;
+  margin: 10px 90px;
+  border: 1px solid #22223b;
+  border-radius: 30px;
+  padding: 15px;
+  font-weight: 900;
+  text-align: center;
+  position: relative;
+}
+.prices .container .plan:nth-child(2) {
+  background-color: #fff;
+  color: #22223b;
+  border-color: #22223b;
+}
+.prices .container .plan .crl {
+  width: 80px;
+  height: 80px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  padding: 10px;
+  margin: 40px auto;
+  transition: 0.7s;
+}
+.prices .container .plan:nth-child(2) .crl {
+  border-color: #22223b;
+}
+.prices .container .plan > p {
+  font-size: 25px;
+  margin: 5px;
+  font-family: cursive;
+}
+.prices .container .plan .crl > p {
+  font-size: 40px;
+  margin-top: 15px;
+}
+.prices .container .plan:first-child .crl:hover,
+.prices .container .plan:last-child .crl:hover {
+  background-color: #fff;
+  color: #22223b;
+  border-color: #22223b;
+}
+.prices .container .plan:nth-child(2) .crl:hover {
+  background-color: #22223b;
+  color: #fff;
+  border-color: #fff;
+}
+.prices .container .plan .crl p:last-child {
+  font-size: 12px;
+  margin-top: 10px;
+}
+.prices .container .plan .featuers {
+  display: inline;
+  font-size: 16px;
+  line-height: 1.8;
+}
+.prices .container .plan .featuers .icons {
+  display: inline;
+  margin: 5px;
+  width: 20%;
+}
+.prices .container .plan .featuers .icons i {
+  display: block;
+  margin: 15px;
+  text-align: start;
+  line-height: 1.2;
+}
+.prices .container .plan .featuers .txt {
+  width: 80%;
+  display: block;
+  text-align: start;
+  margin-left: 40px;
+  margin-top: -240px;
+}
+.prices .container .plan .featuers .txt p {
+  margin: 5px;
+}
+.prices .container .plan:nth-child(2) .featuers .txt {
+  margin-top: -171px;
+}
+.prices .container .plan:nth-child(1) .featuers .txt {
+  margin-top: -138px;
+}
+.prices .container .plan .btn {
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 120px;
+  height: 40px;
+  padding: 10px;
+  background-color: #fff;
+  color: #22223b;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  font-weight: 900;
+  cursor: pointer;
+  transition: 0.9s;
+}
+.prices .container .plan .btn:hover {
+  bottom: -1%;
+  width: 140px;
+}
+.prices .container .plan:nth-child(2) .btn {
+  background-color: #22223b;
+  color: #fff;
+}
+/* End Prices Section */
+/* Start Team Section */
+.team .container {
+  width: 80%;
+  margin: 250px auto;
+  text-align: center;
+}
+.team .container .prog {
+  display: inline-block;
+  text-align: center;
+  width: 25%;
+  border: 1px solid #b239bb;
+  border-radius: 30px;
+  position: relative;
+  margin: 40px;
+  transition: 0.5s;
+}
+.team .container .prog:first-child:hover {
+  transform: translate(-10px,-15px);
+}
+.team .container .prog:nth-child(2):hover {
+  transform: translate(0px,-15px);
+}
+.team .container .prog:last-child:hover {
+  transform: translate(10px,-15px);
+}
+.team .container .prog:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0px;
+  top: 0;
+  left: 0;
+  background-color: #c9ada7;
+  border: 0px solid #c9ada7;
+  border-radius: 30px;
+  transition: 0.6s;
+  opacity: 0;
+}
+.team .container .prog:hover::after {
+  height: 100%;
+  opacity: 0.6;
+}
+.team .container .img {
+  margin-top: 10px;
+  width: 200px;
+  opacity: 1;
+}
+.team .container img {
+  width: 100%;
+  display: inline;
+  border: 0px solid #eee;
+  border-radius: 30px;
+}
+.team .container .icons {
+  position: absolute;
+  background-color: #2828d6;
+  border: 0px solid #eee;
+  border-bottom-left-radius: 7px;
+  border-top-right-radius: 28px;
+  color: #eee;
+  right: 0px;
+  top: 0px;
+  transition: 0.4s;
+  visibility: hidden;
+  z-index: 2;
+}
+.team .container .prog:hover .icons{
+  visibility: visible;
+}
+.team .container .icons i {
+  display: block;
+  width: 40px;
+  height: 40px;
+  line-height: 2.2;
+  text-align: center;
+  padding: 7px;
+  cursor: pointer;
+}
+.team .container .icons i:first-child,
+.team .container .icons i:nth-child(2) {
+  border-bottom: 1px solid #eee;
+}
+.team .container .prog .info {
+  margin: 20px auto;
+}
+.team .container .prog .info span {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: cursive;
+  color: #22223b;
+}
+.team .container .prog .info p {
+  font-size: 25px;
+  font-weight: bold;
+  color: #b239bb;
+  margin-top: 5px;
+}
+/* End Team Section */
+/* Start Achievements Section */
+.status {
+  width: 100%;
+  height: 60vh;
+  background-color: #ccccd2;
+  background-image: url(../images/desert-background-with-full-moon-vector.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+.status .fr-section p {
+  color: #fff;
+  margin-top: 40px;
+}
+.status .container {
+  width: 80%;
+  margin: 90px auto;
+  text-align: center;
+}
+.status .container .pkg {
+  display: inline-block;
+  margin: 80px;
+  text-align: center;
+  color: #eee;
+}
+.status .container .pkg i {
+  color: #b239bb;
+  font-size: 30px;
+}
+.status .container .pkg p {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: cursive;
+  margin: 15px;
+}
+.status .container .pkg .sp {
+  display: block;
+  font-size: 17px;
+  font-family: cursive;
+}
+/* End Achievements Section */
+/* Start contacts Section */
+.contacts {
+  width: 100%;
+  height: 30vh;
+}
+.contacts .container {
+  width: 50%;
+  margin: 60px auto;
+  text-align: center;
+}
+.contacts .container p {
+  font-size: 40px;
+  font-weight: bold;
+  font-family: "work-sans", "sans-serif";
+  color: #22223b;
+  margin: 10px;
+}
+.contacts .container > a {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "work-sans", "sans-serif";
+  color: #b239bb;
+  margin: 5px;
+  transition: 1s;
+}
+.contacts .container > a:hover {
+  font-size: 35px;
+  margin: 0px;
+}
+.contacts .container .media {
+  margin: 10px;
+  text-align: center;
+  line-height: 3.7;
+}
+.contacts .container .media a {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #b239bb;
+  border-radius: 50%;
+  background-color: #b239bb;
+  margin: 5px;
+  transition: 0.8s;
+}
+.contacts .container .media a:hover {
+  transform: translateY(-10px);
+}
+.contacts .container .media a i {
+  font-size: 25px;
+  color: #fff;
+}
+/* End contacts Section */
+/* Start Footer Section */
+.footer {
+  width: 100%;
+  font-family: "work-sans", "sans-serif";
+  background-color: #22223b;
+  text-align: center;
+  padding: 20px 0;
+  color: #fff;
+  font-size: 20px;
+  transform: translateY(300px);
+}
+.footer span {
+  color: #b239bb;
+} 
+/* End Footer Section */
