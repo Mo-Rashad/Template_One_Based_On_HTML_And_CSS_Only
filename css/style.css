@@ -219,7 +219,7 @@ html {
   background-color: #c9ada7;
   border: 1px solid #c9ada7;
   border-radius: 5%;
-  transition: .5s;
+  transition: .9s;
   opacity: 0;
 }
 .portfolio .container .item:hover::before {
